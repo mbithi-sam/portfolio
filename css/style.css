@@ -242,3 +242,18 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* ---------- Responsive: small screens ---------- */
+@media (max-width: 640px) {
+  section {
+    padding: 3rem 1.25rem;
+  }
+
+  #hero {
+    padding: 4rem 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
