@@ -205,3 +205,40 @@ nav a:hover {
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
 }
+
+/* ---------- Contact ---------- */
+.contact-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-links a {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-links a:hover {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--dark);
+  color: #9ca3af;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
