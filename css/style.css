@@ -47,3 +47,93 @@ p {
 a {
   color: var(--primary);
 }
+
+/* ---------- Navigation ---------- */
+header {
+  position: sticky;
+  top: 0;
+  background: var(--dark);
+  z-index: 100;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+/* ---------- Hero ---------- */
+#hero {
+  max-width: none;
+  background: var(--dark);
+  color: #ffffff;
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.hero-greeting {
+  color: #60a5fa;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+#hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #cbd5e1;
+  font-size: 1.15rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: #ffffff;
+}
+
+.btn-outline:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: var(--dark);
+}
